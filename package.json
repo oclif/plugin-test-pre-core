@@ -1,15 +1,15 @@
 {
-  "name": "@oclif/plugin-test-cjs-config",
+  "name": "@oclif/plugin-test-pre-core",
   "version": "0.1.0",
-  "description": "Test plugin that uses deprecated @oclif/config",
+  "description": "Test plugin that uses deprecated @oclif/config and @oclif/command",
   "author": "Salesforce",
   "bin": {
-    "cjs-config": "./bin/run"
+    "pre-core": "./bin/run"
   },
-  "homepage": "https://github.com/oclif/plugin-test-cjs-config",
+  "homepage": "https://github.com/oclif/plugin-test-pre-core",
   "license": "MIT",
   "main": "dist/index.js",
-  "repository": "oclif/plugin-test-cjs-config",
+  "repository": "oclif/plugin-test-pre-core",
   "files": [
     "/bin",
     "/dist",
