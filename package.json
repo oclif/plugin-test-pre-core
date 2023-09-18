@@ -1,6 +1,6 @@
 {
   "name": "@oclif/plugin-test-pre-core",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Test plugin that uses deprecated @oclif/config and @oclif/command",
   "author": "Salesforce",
   "bin": {
