@@ -24,7 +24,7 @@
     "@oclif/plugin-plugins": "^3.7.0"
   },
   "devDependencies": {
-    "@oclif/test": "^2.5.4",
+    "@oclif/test": "^1.2.8",
     "@types/chai": "^4",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.18.51",
@@ -52,6 +52,9 @@
       "hello": {
         "description": "Say hello to the world and others"
       }
+    },
+    "hooks": {
+      "init": "./dist/hooks/init/init"
     }
   },
   "scripts": {
