@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/oclif/plugin-test-pre-core/compare/0.3.0...0.3.1) (2023-09-18)
+
+
+### Bug Fixes
+
+* use lowercase ([3297529](https://github.com/oclif/plugin-test-pre-core/commit/329752939286716dcf7452f57e74e4f1a89ad635))
+
+
+
 # [0.3.0](https://github.com/oclif/plugin-test-pre-core/compare/0.2.0...0.3.0) (2023-09-18)
 
 
