@@ -40,8 +40,8 @@
     "typescript": "^4.9.5"
   },
   "oclif": {
-    "bin": "cjs-config",
-    "dirname": "cjs-config",
+    "bin": "pre-core",
+    "dirname": "pre-core",
     "commands": "./dist/commands",
     "plugins": [
       "@oclif/plugin-help",
