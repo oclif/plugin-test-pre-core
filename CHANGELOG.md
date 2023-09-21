@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/oclif/plugin-test-pre-core/compare/0.3.1...0.4.0) (2023-09-21)
+
+
+### Features
+
+* add flags and args ([6d6842b](https://github.com/oclif/plugin-test-pre-core/commit/6d6842b3280458e4f8c766b0ffd7fcb0178f728b))
+
+
+
 ## [0.3.1](https://github.com/oclif/plugin-test-pre-core/compare/0.3.0...0.3.1) (2023-09-18)
 
 
