@@ -1,3 +1,12 @@
+## [0.4.1](https://github.com/oclif/plugin-test-pre-core/compare/0.4.0...0.4.1) (2023-09-21)
+
+
+### Bug Fixes
+
+* update bin ([b49d881](https://github.com/oclif/plugin-test-pre-core/commit/b49d881d1d489b2cfc8b9c274a2dab3f161b5dde))
+
+
+
 # [0.4.0](https://github.com/oclif/plugin-test-pre-core/compare/0.3.1...0.4.0) (2023-09-21)
 
 
