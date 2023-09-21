@@ -1,7 +1,44 @@
-import {Command} from '@oclif/command'
+import {Command, flags} from '@oclif/command'
+
+type Result = {
+  args: { [name: string]: any }
+  flags: { [name: string]: any }
+}
 
 export default class PreCore extends Command {
-  async run(): Promise<void> {
-    this.log(`hello I am a pre-core plugin from ${this.config.root}`)
+  static flags = {
+    optionalString: flags.string(),
+    defaultString: flags.string({
+      default: 'simple string default',
+    }),
+    defaultFnString: flags.string({
+      default: () => 'fn default',
+    }),
+    json: flags.boolean(),
+  }
+
+  static args = [
+    {
+      name: 'optionalArg',
+    },
+    {
+      name: 'defaultArg',
+      default: 'simple string default',
+    },
+    {
+      name: 'defaultFnArg',
+      default: (): string => 'fn default',
+    },
+  ]
+
+  async run(): Promise<Result> {
+    const {args, flags} = this.parse(PreCore)
+    if (flags.json) {
+      this.log(JSON.stringify({args, flags}, null, 2))
+    } else {
+      this.log(`hello I am a pre-core plugin from ${this.config.root}`)
+    }
+
+    return {args, flags}
   }
 }
