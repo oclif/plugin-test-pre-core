@@ -1,3 +1,12 @@
+## [0.4.2](https://github.com/oclif/plugin-test-pre-core/compare/0.4.1...0.4.2) (2023-09-22)
+
+
+### Bug Fixes
+
+* declaration false ([2dcd84c](https://github.com/oclif/plugin-test-pre-core/commit/2dcd84c3cb6bacf454316d5aa36b03fa354f21ac))
+
+
+
 ## [0.4.1](https://github.com/oclif/plugin-test-pre-core/compare/0.4.0...0.4.1) (2023-09-21)
 
 
