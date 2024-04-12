@@ -1,6 +1,6 @@
 {
   "name": "@oclif/plugin-test-pre-core",
-  "version": "0.4.11",
+  "version": "0.4.12",
   "description": "Test plugin that uses deprecated @oclif/config and @oclif/command",
   "author": "Salesforce",
   "bin": {
@@ -27,7 +27,7 @@
     "@oclif/test": "^1.2.8",
     "@types/chai": "^4",
     "@types/mocha": "^9.0.0",
-    "@types/node": "^16.18.91",
+    "@types/node": "^16.18.95",
     "chai": "^4",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^4",
