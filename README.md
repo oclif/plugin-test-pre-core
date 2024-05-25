@@ -18,7 +18,7 @@ $ npm install -g @oclif/plugin-test-pre-core
 $ pre-core COMMAND
 running command...
 $ pre-core (--version)
-@oclif/plugin-test-pre-core/0.4.13 linux-x64 node-v18.20.2
+@oclif/plugin-test-pre-core/0.4.14 linux-x64 node-v18.20.2
 $ pre-core --help [COMMAND]
 USAGE
   $ pre-core COMMAND
@@ -77,7 +77,7 @@ EXAMPLES
   $ pre-core plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/index.ts)_
 
 ## `pre-core plugins:inspect PLUGIN...`
 
@@ -104,7 +104,7 @@ EXAMPLES
   $ pre-core plugins:inspect myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/inspect.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/inspect.ts)_
 
 ## `pre-core plugins:install PLUGIN...`
 
@@ -144,7 +144,7 @@ EXAMPLES
   $ pre-core plugins:install someuser/someplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/install.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/install.ts)_
 
 ## `pre-core plugins:link PLUGIN`
 
@@ -174,7 +174,7 @@ EXAMPLES
   $ pre-core plugins:link myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/link.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/link.ts)_
 
 ## `pre-core plugins:uninstall PLUGIN...`
 
@@ -199,7 +199,7 @@ ALIASES
   $ pre-core plugins remove
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/uninstall.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/uninstall.ts)_
 
 ## `pre-core plugins update`
 
@@ -217,7 +217,7 @@ DESCRIPTION
   Update installed plugins.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.9.4/src/commands/plugins/update.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/update.ts)_
 
 ## `pre-core pre-core [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG]`
 
@@ -233,5 +233,5 @@ FLAGS
   --optionalString=<value>
 ```
 
-_See code: [src/commands/pre-core.ts](https://github.com/oclif/plugin-test-pre-core/blob/0.4.13/src/commands/pre-core.ts)_
+_See code: [src/commands/pre-core.ts](https://github.com/oclif/plugin-test-pre-core/blob/0.4.14/src/commands/pre-core.ts)_
 <!-- commandsstop -->
