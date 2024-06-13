@@ -18,7 +18,7 @@ $ npm install -g @oclif/plugin-test-pre-core
 $ pre-core COMMAND
 running command...
 $ pre-core (--version)
-@oclif/plugin-test-pre-core/0.4.14 linux-x64 node-v18.20.2
+@oclif/plugin-test-pre-core/0.4.15 linux-x64 node-v18.20.3
 $ pre-core --help [COMMAND]
 USAGE
   $ pre-core COMMAND
@@ -233,5 +233,5 @@ FLAGS
   --optionalString=<value>
 ```
 
-_See code: [src/commands/pre-core.ts](https://github.com/oclif/plugin-test-pre-core/blob/0.4.14/src/commands/pre-core.ts)_
+_See code: [src/commands/pre-core.ts](https://github.com/oclif/plugin-test-pre-core/blob/0.4.15/src/commands/pre-core.ts)_
 <!-- commandsstop -->
