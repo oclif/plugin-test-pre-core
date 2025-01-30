@@ -1,22 +1,11 @@
 import {Command, flags} from '@oclif/command'
 
 type Result = {
-  args: { [name: string]: any }
-  flags: { [name: string]: any }
+  args: {[name: string]: unknown}
+  flags: {[name: string]: unknown}
 }
 
 export default class PreCore extends Command {
-  static flags = {
-    optionalString: flags.string(),
-    defaultString: flags.string({
-      default: 'simple string default',
-    }),
-    defaultFnString: flags.string({
-      default: () => 'fn default',
-    }),
-    json: flags.boolean(),
-  }
-
   static args = [
     {
       name: 'optionalArg',
@@ -30,6 +19,16 @@ export default class PreCore extends Command {
       default: (): string => 'fn default',
     },
   ]
+static flags = {
+    optionalString: flags.string(),
+    defaultString: flags.string({
+      default: 'simple string default',
+    }),
+    defaultFnString: flags.string({
+      default: () => 'fn default',
+    }),
+    json: flags.boolean(),
+  }
 
   async run(): Promise<Result> {
     const {args, flags} = this.parse(PreCore)
