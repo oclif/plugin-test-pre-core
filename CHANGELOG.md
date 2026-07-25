@@ -1,3 +1,12 @@
+## [0.4.21](https://github.com/oclif/plugin-test-pre-core/compare/0.4.20...0.4.21) (2026-07-25)
+
+
+### Bug Fixes
+
+* **deps:** bump shell-quote from 1.8.4 to 1.10.0 ([#202](https://github.com/oclif/plugin-test-pre-core/issues/202)) ([ea5c71f](https://github.com/oclif/plugin-test-pre-core/commit/ea5c71fd636ed8b63db8965a72075ccb0f56b24c))
+
+
+
 ## [0.4.20](https://github.com/oclif/plugin-test-pre-core/compare/0.4.19...0.4.20) (2026-06-10)
 
 
