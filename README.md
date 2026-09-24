@@ -18,7 +18,7 @@ $ npm install -g @oclif/plugin-test-pre-core
 $ pre-core COMMAND
 running command...
 $ pre-core (--version)
-@oclif/plugin-test-pre-core/0.4.21 linux-x64 node-v22.23.1
+@oclif/plugin-test-pre-core/0.4.22 linux-x64 node-v22.23.2
 $ pre-core --help [COMMAND]
 USAGE
   $ pre-core COMMAND
@@ -27,25 +27,26 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`pre-core help [COMMANDS]`](#pre-core-help-commands)
+* [`pre-core help [COMMAND]`](#pre-core-help-command)
 * [`pre-core plugins`](#pre-core-plugins)
 * [`pre-core plugins:inspect PLUGIN...`](#pre-core-pluginsinspect-plugin)
-* [`pre-core plugins:install PLUGIN...`](#pre-core-pluginsinstall-plugin)
-* [`pre-core plugins:link PLUGIN`](#pre-core-pluginslink-plugin)
-* [`pre-core plugins:uninstall PLUGIN...`](#pre-core-pluginsuninstall-plugin)
+* [`pre-core plugins install PLUGIN`](#pre-core-plugins-install-plugin)
+* [`pre-core plugins link PATH`](#pre-core-plugins-link-path)
+* [`pre-core plugins reset`](#pre-core-plugins-reset)
+* [`pre-core plugins uninstall [PLUGIN]`](#pre-core-plugins-uninstall-plugin)
 * [`pre-core plugins update`](#pre-core-plugins-update)
 * [`pre-core pre-core [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG]`](#pre-core-pre-core-optionalarg-defaultarg-defaultfnarg)
 
-## `pre-core help [COMMANDS]`
+## `pre-core help [COMMAND]`
 
 Display help for pre-core.
 
 ```
 USAGE
-  $ pre-core help [COMMANDS] [-n]
+  $ pre-core help [COMMAND...] [-n]
 
 ARGUMENTS
-  COMMANDS  Command to show help for.
+  [COMMAND...]  Command to show help for.
 
 FLAGS
   -n, --nested-commands  Include all nested commands in the output.
@@ -54,7 +55,7 @@ DESCRIPTION
   Display help for pre-core.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/5.2.20/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/7.0.0/src/commands/help.ts)_
 
 ## `pre-core plugins`
 
@@ -77,7 +78,7 @@ EXAMPLES
   $ pre-core plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/index.ts)_
 
 ## `pre-core plugins:inspect PLUGIN...`
 
@@ -85,10 +86,10 @@ Displays installation properties of a plugin.
 
 ```
 USAGE
-  $ pre-core plugins:inspect PLUGIN...
+  $ pre-core plugins inspect PLUGIN...
 
 ARGUMENTS
-  PLUGIN  [default: .] Plugin to inspect.
+  PLUGIN...  [default: .] Plugin to inspect.
 
 FLAGS
   -h, --help     Show CLI help.
@@ -101,69 +102,79 @@ DESCRIPTION
   Displays installation properties of a plugin.
 
 EXAMPLES
-  $ pre-core plugins:inspect myplugin
+  $ pre-core plugins inspect myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/inspect.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/inspect.ts)_
 
-## `pre-core plugins:install PLUGIN...`
+## `pre-core plugins install PLUGIN`
 
-Installs a plugin into the CLI.
+Installs a plugin into pre-core.
 
 ```
 USAGE
-  $ pre-core plugins:install PLUGIN...
+  $ pre-core plugins install PLUGIN... [--json] [-f] [-h] [-s | -v]
 
 ARGUMENTS
-  PLUGIN  Plugin to install.
+  PLUGIN...  Plugin to install.
 
 FLAGS
-  -f, --force    Run yarn install with force flag.
+  -f, --force    Force npm to fetch remote resources even if a local copy exists on disk.
   -h, --help     Show CLI help.
-  -v, --verbose
+  -s, --silent   Silences npm output.
+  -v, --verbose  Show verbose npm output.
+
+GLOBAL FLAGS
+  --json  Format output as json.
 
 DESCRIPTION
-  Installs a plugin into the CLI.
-  Can be installed from npm or a git url.
+  Installs a plugin into pre-core.
+
+  Uses npm to install plugins.
 
   Installation of a user-installed plugin will override a core plugin.
 
-  e.g. If you have a core plugin that has a 'hello' command, installing a user-installed plugin with a 'hello' command
-  will override the core plugin implementation. This is useful if a user needs to update core plugin functionality in
-  the CLI without the need to patch and update the whole CLI.
-
+  Use the PRE_CORE_NPM_LOG_LEVEL environment variable to set the npm loglevel.
+  Use the PRE_CORE_NPM_REGISTRY environment variable to set the npm registry.
 
 ALIASES
   $ pre-core plugins add
 
 EXAMPLES
-  $ pre-core plugins:install myplugin 
+  Install a plugin from npm registry.
 
-  $ pre-core plugins:install https://github.com/someuser/someplugin
+    $ pre-core plugins install myplugin
 
-  $ pre-core plugins:install someuser/someplugin
+  Install a plugin from a github url.
+
+    $ pre-core plugins install https://github.com/someuser/someplugin
+
+  Install a plugin from a github slug.
+
+    $ pre-core plugins install someuser/someplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/install.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/install.ts)_
 
-## `pre-core plugins:link PLUGIN`
+## `pre-core plugins link PATH`
 
 Links a plugin into the CLI for development.
 
 ```
 USAGE
-  $ pre-core plugins:link PLUGIN
+  $ pre-core plugins link PATH [-h] [--install] [-v]
 
 ARGUMENTS
   PATH  [default: .] path to plugin
 
 FLAGS
-  -h, --help      Show CLI help.
+  -h, --help          Show CLI help.
   -v, --verbose
-  --[no-]install  Install dependencies after linking the plugin.
+      --[no-]install  Install dependencies after linking the plugin.
 
 DESCRIPTION
   Links a plugin into the CLI for development.
+
   Installation of a linked plugin will override a user-installed or core plugin.
 
   e.g. If you have a user-installed or core plugin that has a 'hello' command, installing a linked plugin with a 'hello'
@@ -171,21 +182,36 @@ DESCRIPTION
 
 
 EXAMPLES
-  $ pre-core plugins:link myplugin
+  $ pre-core plugins link myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/link.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/link.ts)_
 
-## `pre-core plugins:uninstall PLUGIN...`
+## `pre-core plugins reset`
+
+Remove all user-installed and linked plugins.
+
+```
+USAGE
+  $ pre-core plugins reset [--hard] [--reinstall]
+
+FLAGS
+  --hard       Delete node_modules and package manager related files in addition to uninstalling plugins.
+  --reinstall  Reinstall all plugins after uninstalling.
+```
+
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/reset.ts)_
+
+## `pre-core plugins uninstall [PLUGIN]`
 
 Removes a plugin from the CLI.
 
 ```
 USAGE
-  $ pre-core plugins:uninstall PLUGIN...
+  $ pre-core plugins uninstall [PLUGIN...] [-h] [-v]
 
 ARGUMENTS
-  PLUGIN  plugin to uninstall
+  [PLUGIN...]  plugin to uninstall
 
 FLAGS
   -h, --help     Show CLI help.
@@ -197,9 +223,12 @@ DESCRIPTION
 ALIASES
   $ pre-core plugins unlink
   $ pre-core plugins remove
+
+EXAMPLES
+  $ pre-core plugins uninstall myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/uninstall.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/uninstall.ts)_
 
 ## `pre-core plugins update`
 
@@ -217,7 +246,7 @@ DESCRIPTION
   Update installed plugins.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/3.10.1/src/commands/plugins/update.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/update.ts)_
 
 ## `pre-core pre-core [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG]`
 
@@ -233,5 +262,5 @@ FLAGS
   --optionalString=<value>
 ```
 
-_See code: [src/commands/pre-core.ts](https://github.com/oclif/plugin-test-pre-core/blob/0.4.21/src/commands/pre-core.ts)_
+_See code: [src/commands/pre-core.ts](https://github.com/oclif/plugin-test-pre-core/blob/0.4.22/src/commands/pre-core.ts)_
 <!-- commandsstop -->

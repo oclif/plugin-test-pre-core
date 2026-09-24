@@ -1,3 +1,12 @@
+## [0.4.22](https://github.com/oclif/plugin-test-pre-core/compare/0.4.21...0.4.22) (2026-09-24)
+
+
+### Bug Fixes
+
+* bumping deps (W-24099831) ([83dd9c0](https://github.com/oclif/plugin-test-pre-core/commit/83dd9c0a273a0f5ffa4dee50e5a5110ecfbd9643))
+
+
+
 ## [0.4.21](https://github.com/oclif/plugin-test-pre-core/compare/0.4.20...0.4.21) (2026-07-25)
 
 
