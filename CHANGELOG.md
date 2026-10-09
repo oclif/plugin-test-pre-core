@@ -1,3 +1,12 @@
+## [0.4.24](https://github.com/oclif/plugin-test-pre-core/compare/0.4.23...0.4.24) (2026-10-09)
+
+
+### Bug Fixes
+
+* **deps:** bump source-map-js from 1.2.1 to 1.2.2 ([#210](https://github.com/oclif/plugin-test-pre-core/issues/210)) ([6f93347](https://github.com/oclif/plugin-test-pre-core/commit/6f93347597dea63606e8a2f4dc7ba1f5de39a881))
+
+
+
 ## [0.4.23](https://github.com/oclif/plugin-test-pre-core/compare/0.4.22...0.4.23) (2026-10-09)
 
 
