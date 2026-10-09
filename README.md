@@ -18,7 +18,7 @@ $ npm install -g @oclif/plugin-test-pre-core
 $ pre-core COMMAND
 running command...
 $ pre-core (--version)
-@oclif/plugin-test-pre-core/0.4.22 linux-x64 node-v22.23.2
+@oclif/plugin-test-pre-core/0.4.23 linux-x64 node-v22.23.3
 $ pre-core --help [COMMAND]
 USAGE
   $ pre-core COMMAND
@@ -55,7 +55,7 @@ DESCRIPTION
   Display help for pre-core.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/7.0.0/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/7.0.2/src/commands/help.ts)_
 
 ## `pre-core plugins`
 
@@ -262,5 +262,5 @@ FLAGS
   --optionalString=<value>
 ```
 
-_See code: [src/commands/pre-core.ts](https://github.com/oclif/plugin-test-pre-core/blob/0.4.22/src/commands/pre-core.ts)_
+_See code: [src/commands/pre-core.ts](https://github.com/oclif/plugin-test-pre-core/blob/0.4.23/src/commands/pre-core.ts)_
 <!-- commandsstop -->
