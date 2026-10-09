@@ -18,7 +18,7 @@ $ npm install -g @oclif/plugin-test-pre-core
 $ pre-core COMMAND
 running command...
 $ pre-core (--version)
-@oclif/plugin-test-pre-core/0.4.24 linux-x64 node-v22.23.3
+@oclif/plugin-test-pre-core/0.4.25 linux-x64 node-v22.23.3
 $ pre-core --help [COMMAND]
 USAGE
   $ pre-core COMMAND
@@ -78,7 +78,7 @@ EXAMPLES
   $ pre-core plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/index.ts)_
 
 ## `pre-core plugins:inspect PLUGIN...`
 
@@ -105,7 +105,7 @@ EXAMPLES
   $ pre-core plugins inspect myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/inspect.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/inspect.ts)_
 
 ## `pre-core plugins install PLUGIN`
 
@@ -154,7 +154,7 @@ EXAMPLES
     $ pre-core plugins install someuser/someplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/install.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/install.ts)_
 
 ## `pre-core plugins link PATH`
 
@@ -185,7 +185,7 @@ EXAMPLES
   $ pre-core plugins link myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/link.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/link.ts)_
 
 ## `pre-core plugins reset`
 
@@ -200,7 +200,7 @@ FLAGS
   --reinstall  Reinstall all plugins after uninstalling.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/reset.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/reset.ts)_
 
 ## `pre-core plugins uninstall [PLUGIN]`
 
@@ -228,7 +228,7 @@ EXAMPLES
   $ pre-core plugins uninstall myplugin
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/uninstall.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/uninstall.ts)_
 
 ## `pre-core plugins update`
 
@@ -246,7 +246,7 @@ DESCRIPTION
   Update installed plugins.
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.1/src/commands/plugins/update.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/7.0.3/src/commands/plugins/update.ts)_
 
 ## `pre-core pre-core [OPTIONALARG] [DEFAULTARG] [DEFAULTFNARG]`
 
@@ -262,5 +262,5 @@ FLAGS
   --optionalString=<value>
 ```
 
-_See code: [src/commands/pre-core.ts](https://github.com/oclif/plugin-test-pre-core/blob/0.4.24/src/commands/pre-core.ts)_
+_See code: [src/commands/pre-core.ts](https://github.com/oclif/plugin-test-pre-core/blob/0.4.25/src/commands/pre-core.ts)_
 <!-- commandsstop -->
