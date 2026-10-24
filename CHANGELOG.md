@@ -1,3 +1,12 @@
+## [0.4.31](https://github.com/oclif/plugin-test-pre-core/compare/0.4.30...0.4.31) (2026-10-24)
+
+
+### Bug Fixes
+
+* **deps:** bump ip-address from 10.7.2 to 10.7.4 ([#221](https://github.com/oclif/plugin-test-pre-core/issues/221)) ([06df8f8](https://github.com/oclif/plugin-test-pre-core/commit/06df8f858c24618acec5a2a0ce18f1317fea9650))
+
+
+
 ## [0.4.30](https://github.com/oclif/plugin-test-pre-core/compare/0.4.29...0.4.30) (2026-10-24)
 
 
