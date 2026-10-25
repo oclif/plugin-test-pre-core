@@ -1,3 +1,12 @@
+## [0.4.33](https://github.com/oclif/plugin-test-pre-core/compare/0.4.32...0.4.33) (2026-10-25)
+
+
+### Bug Fixes
+
+* **deps:** bump @oclif/plugin-plugins from 7.0.7 to 7.0.10 ([#216](https://github.com/oclif/plugin-test-pre-core/issues/216)) ([74b69b7](https://github.com/oclif/plugin-test-pre-core/commit/74b69b721e7ef333afdf9f04668d9b424cffa964))
+
+
+
 ## [0.4.32](https://github.com/oclif/plugin-test-pre-core/compare/0.4.31...0.4.32) (2026-10-25)
 
 
