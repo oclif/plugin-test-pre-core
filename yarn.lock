@@ -1102,10 +1102,10 @@
     is-wsl "^2.1.1"
     tslib "^2.6.1"
 
-"@oclif/core@^5.0.0", "@oclif/core@^5.1.8":
-  version "5.1.9"
-  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-5.1.9.tgz#6781c6c08ffeb1bc308f5501f77904859b1d3103"
-  integrity sha512-jZfN6pxHkgDpHD0dk4nhtaUtYdK39oZoWJCfmkpp7CUE+6mUZSb3WDrdBHnxI5n6CJIiWBrLchM7rBvuV0lRSA==
+"@oclif/core@^5.0.0", "@oclif/core@^5.1.8", "@oclif/core@^5.1.9":
+  version "5.1.10"
+  resolved "https://registry.yarnpkg.com/@oclif/core/-/core-5.1.10.tgz#b23c7e4a192313446533d52f32e7d9e4a7cd4aeb"
+  integrity sha512-iO+Ga2ve3x0QDeqKVvVEYbb+YPVV7A0rbliCO+ZcUdZ/5Sfv+kHz2G247ExAw5aSAEXn9gX6H4jjON2mcJivqw==
   dependencies:
     ansi-escapes "^4.3.2"
     ansis "^3.17.0"
@@ -1184,12 +1184,12 @@
     ansis "^3.17.0"
     fast-levenshtein "^3.0.0"
 
-"@oclif/plugin-plugins@^7.0.10":
-  version "7.0.10"
-  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-7.0.10.tgz#9b37620346f6dcca7010d18ed06d3a324ee93906"
-  integrity sha512-BamuFshuCUja8Qcv39QryOwGMLEFazMjSUsdnp1XQOHz+/ngmopuDULWwQfE8xkHnmjrn+OytoTsFS0zgBJuHA==
+"@oclif/plugin-plugins@^7.0.13":
+  version "7.0.13"
+  resolved "https://registry.yarnpkg.com/@oclif/plugin-plugins/-/plugin-plugins-7.0.13.tgz#638c9cdc46b686eadde9e3981736e02b5223d6cc"
+  integrity sha512-NQCbUWFYQyIHZHutTYBsfmT299yCkrJqu4AarUXjm7fAj4ss6bkgk8hqHuNqI1WGEf1kQhb4qjzSM0HfLIA6uw==
   dependencies:
-    "@oclif/core" "^5.1.8"
+    "@oclif/core" "^5.1.9"
     ansis "^3.17.0"
     debug "^4.4.0"
     npm "^11.21.0"
